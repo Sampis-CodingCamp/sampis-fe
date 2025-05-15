@@ -3,34 +3,46 @@ import { assets } from "../assets/assets";
 
 const About = () => {
   return (
-    <div className='className="relative z-10 mx-4 sm:mx-[8%]"'>
-      <div class="mx-auto max-w-screen-xl px-4 py-20 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
-          <div>
-            <div class="max-w-lg md:max-w-none" id="#about">
-              <span class="inline-flex items-center justify-center rounded-full bg-green-apple px-2.5 py-0.5 text-emerald-700 ">
-                <p class="text-sm whitespace-nowrap">Tentang Kami</p>
-              </span>
-              <h2 class="text-5xl font-bold text-hitam-manja sm:text-3xl my-5">
-                Apaa itu Sampis?
-              </h2>
-
-              <p class=" text-gray-700">
-                Sampis adalah organisasi yang berkomitmen untuk melestarikan lingkungan dan meningkatkan kesadaran tentang pentingnya pelestarian alam. Melalui berbagai inisiatif dan program, kami <br/>bertujuan untuk menciptakan perubahan positif dalam <br/> lingkungan dan masyarakat
-              </p>
+    <section id="about" className="py-16 lg:py-32">
+      <div className="container">
+        <div className="flex flex-wrap">
+          <div className="mb-10 w-full self-center px-4 text-center lg:w-1/2 lg:text-start">
+            <div className="mb-4 inline-block rounded-md bg-green-100 p-2">
+              <p className="text-xs font-bold text-green-900">TENTANG KAMI</p>
             </div>
+            <p className="mb-4 text-5xl font-bold text-ink">
+              Siapa itu Sampis?
+            </p>
+            <p className="mb-4 text-lg font-extralight text-wolf">
+              Sampis adalah organisasi yang berkomitmen untuk melestarikan
+              lingkungan dan meningkatkan kesadaran tentang pentingnya
+              pelestarian alam. Melalui berbagai inisiatif dan program, kami
+              bertujuan untuk menciptakan perubahan positif dalam lingkungan dan
+              masyarakat
+            </p>
           </div>
-
-          <div>
-            <img
-              src={assets.about_img}
-              className="w-full rounded object-cover"
-              alt=""
-            />
+          <div className="mt-8 flex w-full self-center px-5 lg:w-1/2">
+            <div className="grid grid-cols-3 gap-4 rounded-md">
+              <img
+                className="h-full rounded-md"
+                src={assets.about_img}
+                alt=""
+              />
+              <img
+                className="-mt-8 h-full rounded-md"
+                src="https://images.unsplash.com/photo-1603139793104-5e880b142e4c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+              <img
+                className="h-full rounded-md"
+                src="https://images.unsplash.com/photo-1548430065-53c58a6582dd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
